@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List </title>
+    <link rel="stylesheet" href="stylek.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List for Multiple Users</h1>
+
+        
+        <div class="user-selection">
+            <label for="userSelect">Select a User:</label>
+            <select id="userSelect">
+                <option value="User 1">User 1</option>
+                <option value="User 2">User 2</option>
+                <option value="User 3">User 3</option>
+                <option value="User 4">User 4</option>
+                <option value="User 5">User 5</option>
+            </select>
+            <button id="loadListBtn">Load Todo List</button>
+        </div>
+
+        
+        <div class="todo-list">
+            <h2 id="listTitle">Todo List for User 1</h2>
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addTaskBtn">Add Task</button>
+            <ul id="taskList"></ul>
+            <button id="clearTasksBtn">Clear All Tasks</button>
+        </div>
+    </div>
+
+    <script src="scriptk.js"></script>
+</body>
+</html>
